@@ -30,9 +30,9 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    'https://images.unsplash.com/photo-1474418397713-7ede21d49118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdvbWFuJTIweW9nYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60',
-    'https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    'https://images.unsplash.com/photo-1524863479829-916d8e77f114?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdvbWFuJTIweW9nYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1674231523236-24b60a5791c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&dpr=2&auto=format%2Ccompress&fit=crop&w=999&h=594',
+    'https://images.unsplash.com/photo-1672196619693-f26ef6267edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&dpr=1&auto=format%2Ccompress&fit=crop&w=999&h=594%201x,%20https://images.unsplash.com/photo-1672196619693-f26ef6267edf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&dpr=2&auto=format%2Ccompress&fit=crop&w=999&h=594%202x',
+    'https://images.unsplash.com/photo-1674544191639-712e1447d8a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80','https://media.istockphoto.com/id/819168198/photo/close-up-shot-of-beehives-in-apiary.jpg?s=612x612&w=0&k=20&c=COXfLnspCTcapwYMjZ_P_mpsNYkxHhMpdo9gibEY4w8='
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'lg'}
+            height={'xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
